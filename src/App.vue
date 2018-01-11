@@ -8,41 +8,50 @@
     >
       <v-list>
         <v-list-tile
-          value="true"
-          v-for="(item, i) in items"
-          :key="i"
+          v-for="item in menuItems"
+          :key="item.eng"
+          :to="item.link"
           exact
         >
           <v-list-tile-action>
-            <v-icon v-html="item.icon" to="item.link"></v-icon>
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
 
-
-
     <v-toolbar fixed app dark class="teal">
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title v-text="brandName"></v-toolbar-title>
+      <v-toolbar-side-icon
+        @click.stop="drawer = !drawer">
+      </v-toolbar-side-icon>
+      <v-toolbar-title>
+        <router-link to="/" tag="span" style="cursor: pointer">{{ brandName }}</router-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>add</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>list</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
+        <v-btn
+          icon
+          v-for="item in menuItems"
+          :to="item.link"
+        >
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-btn>
     </v-toolbar>
 
-    <main>
-      <router-view></router-view>
-    </main>
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout justify-center align-center>
+          <router-view/>
+        </v-layout>
+      </v-container>
+    </v-content>
+
+    <v-footer color="teal" app>
+      <v-spacer></v-spacer>
+      <span class="white--text">&copy; 2017</span>
+    </v-footer>
 
   </v-app>
 </template>
@@ -54,10 +63,12 @@
         brandName: 'Flipping English',
         drawer: false,
         miniVariant: true,
-        items: [
+        menuItems: [
           { icon: 'add', title: 'Add Expression', link: '/expr/add' },
-          { icon: 'list', title: 'List', link: 'expr/list' },
-          { icon: 'search', title: 'Search', link: 'expr/search' }
+          { icon: 'list', title: 'List', link: '/expr/list' },
+          { icon: 'search', title: 'Search', link: '' },
+          { icon: 'face', title: 'Sign Up', link: '/signup' },
+          { icon: 'lock_open', title: 'Sign In', link: '/signin' }
         ]
       }
     }
