@@ -20,13 +20,13 @@
 </template>
 
 <script>
-import InfoCard from 'vue-info-card';
+import InfoCard from 'vue-info-card'
 
 export default {
   components: {
-    InfoCard,
+    InfoCard
   },
-  data() {
+  data () {
     return {
       front: {
         title: 'Today\'s English Expression',
@@ -34,9 +34,9 @@ export default {
       },
       back: {
         title: '반드시 기억하자!',
-        message: '좋은 하루 되세요.',
-      },
-    };
-  },
-};
+        message: '좋은 하루 되세요.'
+      }
+    }
+  }
+}
 </script>

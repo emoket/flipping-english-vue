@@ -9,7 +9,7 @@
       <v-list>
         <v-list-tile
           v-for="item in menuItems"
-          :key="item.eng"
+          :key="item.title"
           :to="item.link"
           exact
         >
@@ -34,6 +34,7 @@
         <v-btn
           icon
           v-for="item in menuItems"
+          :key="item.title"
           :to="item.link"
         >
           <v-icon>{{ item.icon }}</v-icon>

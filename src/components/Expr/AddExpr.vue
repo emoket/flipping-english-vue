@@ -45,7 +45,13 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <v-btn dark color="light-green darken-1" :disabled="!formIsValid">Add Expression</v-btn>
+              <v-btn
+                color="light-green darken-1"
+                :disabled="!formIsValid"
+                class="white--text"
+              >
+                Add Expression
+              </v-btn>
             </v-flex>
           </v-layout>
         </form>
