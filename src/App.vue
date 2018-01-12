@@ -31,14 +31,14 @@
         <router-link to="/" tag="span" style="cursor: pointer">{{ brandName }}</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-        <v-btn
-          icon
-          v-for="item in menuItems"
-          :key="item.title"
-          :to="item.link"
-        >
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-btn>
+      <v-btn
+        icon
+        v-for="item in menuItems"
+        :key="item.title"
+        :to="item.link"
+      >
+        <v-icon>{{ item.icon }}</v-icon>
+      </v-btn>
     </v-toolbar>
 
     <v-content>

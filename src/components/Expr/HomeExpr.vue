@@ -12,10 +12,6 @@
         </info-card>
       </v-flex>
     </v-layout>
-
-    <div>
-
-    </div>
   </v-container>
 </template>
 
