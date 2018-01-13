@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/node,macos,windows,webstorm+all,intellij+all
 
 ### Firebase Config ###
-node_modules/firebase.js
+config/firebase.js
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
