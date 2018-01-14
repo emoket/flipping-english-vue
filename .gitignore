@@ -1,5 +1,6 @@
-
-# Created by https://www.gitignore.io/api/node,macos,windows,webstorm+all,intellij+all
+### Output file ###
+public/
+dist/
 
 ### Firebase Config ###
 config/firebase.js
