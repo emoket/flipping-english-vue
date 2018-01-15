@@ -6,7 +6,7 @@ import App from './App'
 import router from './router'
 import firebase from 'firebase'
 
-import firebaseConfig from '../config/firebase'
+import firebaseConfig from '../config/firebase.config'
 
 Vue.use(Vuetify)
 Vue.config.productionTip = false
