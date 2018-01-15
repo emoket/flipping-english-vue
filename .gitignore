@@ -3,7 +3,7 @@ public/
 dist/
 
 ### Firebase Config ###
-config/firebase.js
+config/firebase.config.js
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
