@@ -1,14 +1,15 @@
 <template>
-  <v-container>
-    <v-layout column>
-      <v-flex xs12 sm6 offset-sm3>
+  <v-container fluid>
+    <v-layout>
+      <v-flex xs12 sm8 offset-sm2 class="display-3 text-xs-center">
         <info-card
           :frontType="'text'"
           :frontTitle="front.title"
           :frontData="front.message"
           :backType="'text'"
           :backTitle="back.title"
-          :backData="back.message">
+          :backData="back.message"
+        >
         </info-card>
       </v-flex>
     </v-layout>
@@ -25,13 +26,14 @@ export default {
   data () {
     return {
       front: {
-        title: 'Today\'s English Expression',
-        message: 'Have a nice day.'
+        title: '다음을 영어로 하면?',
+        message: '좋은 하루 되세요.'
       },
       back: {
-        title: '반드시 기억하자!',
-        message: '좋은 하루 되세요.'
+        title: '맞췄니?',
+        message: 'Have a nice day.'
       }
+
     }
   }
 }

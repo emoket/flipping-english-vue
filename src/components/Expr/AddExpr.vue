@@ -15,7 +15,7 @@
                 label="Eng"
                 id="eng"
                 v-model="eng"
-                placeholder="Have a nice day"
+                placeholder="ex. Have a nice day"
                 required
               ></v-text-field>
             </v-flex>
@@ -27,7 +27,7 @@
                 label="Kor"
                 id="kor"
                 v-model="kor"
-                placeholder="좋은 하루 되세요."
+                placeholder="ex. 좋은 하루 되세요."
                 required
               ></v-text-field>
             </v-flex>
@@ -39,6 +39,7 @@
                 label="Tag"
                 id="tag"
                 v-model="tag"
+                placeholder="ex. have"
                 required
               ></v-text-field>
             </v-flex>

@@ -49,11 +49,6 @@
       </v-container>
     </v-content>
 
-    <v-footer color="teal" app>
-      <v-spacer></v-spacer>
-      <span class="white--text">&copy; 2017</span>
-    </v-footer>
-
   </v-app>
 </template>
 
@@ -66,10 +61,7 @@
         miniVariant: true,
         menuItems: [
           { icon: 'add', title: 'Add Expression', link: '/expr/add' },
-          { icon: 'list', title: 'List', link: '/expr/list' },
-          { icon: 'search', title: 'Search', link: '' },
-          { icon: 'face', title: 'Sign Up', link: '/signup' },
-          { icon: 'lock_open', title: 'Sign In', link: '/signin' }
+          { icon: 'list', title: 'List', link: '/expr/list' }
         ]
       }
     }
